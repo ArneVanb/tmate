@@ -171,6 +171,9 @@ static void request_passphrase(struct tmate_ssh_client *client)
 #define KEEPALIVE_CNT		4
 #define KEEPALIVE_INTVL		11
 #define WRITE_TIMEOUT		80
+#define TCP_KEEPALIVE
+#define TCP_KEEPCNT
+#define TCP_KEEPINTVL
 
 static void tune_socket_opts(int fd)
 {
